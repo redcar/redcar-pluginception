@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <% redcar_css = File.expand_path(File.join(Redcar.root, %w(plugins html_view views default.css))) %>
+    <% watermark  = File.expand_path(File.join(Redcar.root, %w(plugins html_view views watermark-48.png))) %>
+    <% jquery_path = File.expand_path(File.join(Redcar.root, %w(plugins html_view assets jquery-1.4.min.js))) %>
+    <link rel="stylesheet" href="file://<%= redcar_css %>" type="text/css" media="screen">
+    <script type="text/javascript" src="file://<%= jquery_path %>"></script>
+  </head>
+  <body>
+    <div id="top">
+      <img src="file://<%=watermark%>" id="watermark"/>
+      <h1>Plugin Finder</h1>
+      <a href="controller/index">Refresh</a>
+    </div>
+    <div class="main">
+      <!-- -->
+    </div>
+  </body>
+</html>
