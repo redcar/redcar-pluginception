@@ -1,5 +1,3 @@
-Yo dawg! <br>
-I heard you like plugins!<br>
-Here's a plugin that can install plugins!
-<br><br>
-YOLO
+<img src="http://f.cl.ly/items/153T2k452W0u240f0W2G/pluginception.jpg"/>
+
+# YOLO
