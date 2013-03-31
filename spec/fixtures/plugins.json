@@ -1,0 +1,16 @@
+{
+  "plugins" : [ 
+    {
+      "url": "https://github.com/kattrali/redcar-rubymotion",
+      "name": "Cocoa",
+      "version": 1.23,
+      "description": "Rubymotion plugin for Redcar"
+    },
+    {
+      "url": "https://github.com/kattrali/redcar-vimly",
+      "name": "Vimly",
+      "version": 1.0,
+      "description": "Some vim-like commands for the Redcar Editor, mostly for text selection and terminal/ruby commands"
+    }
+  ]
+}

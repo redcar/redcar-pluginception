@@ -13,7 +13,20 @@
       <a href="controller/index">Refresh</a>
     </div>
     <div class="main">
-      <!-- -->
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+        <% i = 0 %>
+        <% @json["plugins"].each do |spec| %>
+        <tr class="<%= i % 2 == 0 ? 'even':'odd'%>">
+          <td><a href="#" onclick="Controller.installPlugin('<%= spec['name']%>','<%=spec['url'] %>');"><%= spec["name"] %></a></td>
+          <td><%= spec['description'] %></td>
+          <% i = i + 1%>
+        </tr>
+        <% end %>
+      </table>
     </div>
   </body>
 </html>

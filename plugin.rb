@@ -3,5 +3,6 @@ Plugin.define do
   version "0.1"
   file    "lib", "pluginception"
   object  "Redcar::Pluginception"
-  dependencies "git", ">0"
+  dependencies "git", ">0",
+               "runnables", ">0"
 end

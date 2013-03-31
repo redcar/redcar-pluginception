@@ -1,3 +1,5 @@
+require 'view_controller'
+
 module Redcar
   class Pluginception
 
@@ -20,14 +22,18 @@ module Redcar
       end
       [osx,lin]
     end
-  end
 
-  class PluginceptionCommand < Redcar::Command
-    def execute
-      controller = ViewController.new
-      tab = win.new_tab(HtmlTab)
-      tab.html_view.controller = controller
-      tab.focus
+    class PluginceptionCommand < Redcar::Command
+      def fetched_plugins
+        JSON.parse(File.read(File.join(File.dirname(__FILE__), "..","spec","fixtures","plugins.json")))
+      end
+
+      def execute
+        controller = Pluginception::ViewController.new(fetched_plugins)
+        tab = win.new_tab(HtmlTab)
+        tab.html_view.controller = controller
+        tab.focus
+      end
     end
   end
 end
