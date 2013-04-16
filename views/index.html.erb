@@ -19,7 +19,7 @@
           <th>Description</th>
         </tr>
         <% i = 0 %>
-        <% @json["plugins"].each do |spec| %>
+        <% @plugins.each do |spec| %>
         <tr class="<%= i % 2 == 0 ? 'even':'odd'%>">
           <td><a href="#" onclick="Controller.installPlugin('<%= spec['name']%>','<%=spec['url'] %>');"><%= spec["name"] %></a></td>
           <td><%= spec['description'] %></td>

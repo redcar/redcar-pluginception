@@ -4,5 +4,5 @@ Plugin.define do
   file    "lib", "pluginception"
   object  "Redcar::Pluginception"
   dependencies "git", ">0",
-               "runnables", ">0"
+               "application", ">0"
 end

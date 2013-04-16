@@ -1,4 +1,4 @@
-require 'view_controller'
+require_relative 'view_controller'
 
 module Redcar
   class Pluginception
